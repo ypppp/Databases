@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="700553C3-D7AE-4FED-C6B6-63A16C1BE9A3" name="OWNER">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:22:33 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="owner_id" id="4F0BD36C-B4C9-199B-0F18-84B815411FFA">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:22:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier of owner]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_gname" id="04B6C8E9-64F1-EEDD-8D9A-EDABB2943BE1">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:23:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Given name of owner (optional becuase owner may not have given name)]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_fname" id="53E194FE-0A1A-7B96-9608-766BFA9FCB03">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:23:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Family name of owner (optional because owner may choose not to provide family name)]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_phoneno" id="3B3C68E8-8962-D4F6-311E-7D1080D3EB03">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:23:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Phone number of owner]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EA05DCCF-3B6F-3B2D-0DBC-2E3C30835B3C" name="OWNER PK">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:22:52 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4F0BD36C-B4C9-199B-0F18-84B815411FFA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

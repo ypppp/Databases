@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A869E8E-B835-66C7-4C9C-0856BD720B98" name="CLINIC">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:14:06 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="clinic_id" id="CA40A826-36C1-E88B-EAC2-AC078E5E1026">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:14:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for the clinic]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clinic_name" id="33423B86-F019-898A-3BB5-FFF93F96AABE">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:14:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Name of the clinic]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clinic_address" id="B0A6C846-8E26-138D-A434-89EE954089C4">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:14:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Full street address of the clinic]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clinic_phoneno" id="E55C8ED5-06BF-A57D-2035-403804283A7E">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:15:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Phone number of the clinic]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="475EE603-79EC-0206-B481-AA64022664A5" name="CLINIC PK">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:14:27 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CA40A826-36C1-E88B-EAC2-AC078E5E1026</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
