@@ -15,6 +15,38 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="visit_id" id="F81A0EF6-7E96-05DD-180F-FD239C4E8473">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:28:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for a visit]]></commentInRDBMS>
+<generatorID>DAC39A0E-D232-97E3-EE6A-9D37EDBFA967</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>B1BC8ABF-774A-0708-3993-3E00D166ECCA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_id" id="3EB65FFB-3F9B-A88D-3B30-43AE0CBF6BBF">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:28:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier of drug]]></commentInRDBMS>
+<generatorID>624D5182-6F22-4385-8657-E28384283D3B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>D8E3AB90-A420-1A00-CE70-46B7EEB28598</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="prescription_dosage" id="11840638-BBDD-AD41-701A-F72E0B4C8BD1">
 <createdBy>benca</createdBy>
 <createdTime>2023-09-11 02:24:35 UTC</createdTime>
@@ -71,38 +103,6 @@
 <dataTypePrecision>6</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,6,2</ownDataTypeParameters>
-</Attribute>
-<Attribute name="visit_id" id="F81A0EF6-7E96-05DD-180F-FD239C4E8473">
-<createdBy>benca</createdBy>
-<createdTime>2023-09-11 02:28:03 UTC</createdTime>
-<commentInRDBMS><![CDATA[Unique identifier for a visit]]></commentInRDBMS>
-<generatorID>DAC39A0E-D232-97E3-EE6A-9D37EDBFA967</generatorID>
-<ownerDesignName>pf_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
-</engineerTo>
-<referedAttribute>B1BC8ABF-774A-0708-3993-3E00D166ECCA</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="drug_id" id="3EB65FFB-3F9B-A88D-3B30-43AE0CBF6BBF">
-<createdBy>benca</createdBy>
-<createdTime>2023-09-11 02:28:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Unique identifier of drug]]></commentInRDBMS>
-<generatorID>624D5182-6F22-4385-8657-E28384283D3B</generatorID>
-<ownerDesignName>pf_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
-</engineerTo>
-<referedAttribute>D8E3AB90-A420-1A00-CE70-46B7EEB28598</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0159928-93D7-5E1D-4CBC-3DAED39AD24F" name="SERVICELINE">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:30:40 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="serviceline_cost" id="22A7BAE6-4065-DF09-CE41-8608AB2B765D">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:30:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cost of service (updated by vet for each visit)]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="service_code" id="F73E4082-433B-9FC9-385B-F36DD8B8062D">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:32:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Service code (unique idenitifier with "ABC00". First three characters uppercase letters, last two characters are numbers)]]></commentInRDBMS>
+<generatorID>2F8D54F3-E1AC-A397-1469-71F0BAF6DB51</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>AF19AE55-18A7-2BD4-08CA-0625946EEE70</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_id" id="1B083471-DAE6-FF6F-2B66-9E981CDD3F4C">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:32:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for a visit]]></commentInRDBMS>
+<generatorID>EAAE9FBC-5861-3386-93C1-6077A24FF68D</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>B1BC8ABF-774A-0708-3993-3E00D166ECCA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="081F58FC-3DD8-42D6-4B89-7FCBE5727C48" name="SERVICELINE PK">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-11 02:32:30 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F73E4082-433B-9FC9-385B-F36DD8B8062D</attributeRef>
+<attributeRef>1B083471-DAE6-FF6F-2B66-9E981CDD3F4C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
