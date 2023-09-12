@@ -61,6 +61,38 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="training_id" id="D880D478-C56A-607C-2071-41A955CB9FA5">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:45:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifer for a training]]></commentInRDBMS>
+<generatorID>B5927CB8-961E-C08C-86F3-CF754C6678DE</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>D9354E9C-2A18-A075-F327-94A846C3AA90</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_id" id="AB0C200D-3DF5-60EE-9A59-C3B32004421B">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:45:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for vet]]></commentInRDBMS>
+<generatorID>688E4F34-3C0B-6EE0-B2D4-5B7D11298865</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>1018D05E-1BA9-B412-4CF3-4C082A5826EC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="911EF39B-49E7-26CA-7DE1-66DB213931AA" name="CERTIFICATE PK">
@@ -73,6 +105,19 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>CA2D05B3-531C-1559-2B35-BAD83A8B5369</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="22A12B78-A246-E9EC-980C-60335A34A784" name="CERTIFICATE UKs">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:50:57 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<newElementsIDs>D880D478-C56A-607C-2071-41A955CB9FA5,AB0C200D-3DF5-60EE-9A59-C3B32004421B</newElementsIDs>
+<usedAttributes>
+<attributeRef>D880D478-C56A-607C-2071-41A955CB9FA5</attributeRef>
+<attributeRef>AB0C200D-3DF5-60EE-9A59-C3B32004421B</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

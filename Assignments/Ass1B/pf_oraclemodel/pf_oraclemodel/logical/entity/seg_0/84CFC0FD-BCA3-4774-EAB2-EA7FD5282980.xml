@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="84CFC0FD-BCA3-4774-EAB2-EA7FD5282980" name="ANIMALTYPE">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:20:57 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="animaltype_id" id="9C925F1A-655F-8436-4870-2DEF3DF42691">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:21:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Identifier for Animal Type]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="animaltype_name" id="92450C33-C922-4EA4-4682-A132548C1537">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:21:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Name of Animal Type]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9866F430-43AA-E6DA-9806-DCEEBD9F184D" name="ANIMALTYPE PK">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:22:58 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C925F1A-655F-8436-4870-2DEF3DF42691</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

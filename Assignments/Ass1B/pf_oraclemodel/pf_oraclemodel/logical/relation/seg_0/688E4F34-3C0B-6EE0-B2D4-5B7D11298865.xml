@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vet_certificate" directorySegmentName="seg_0" id="688E4F34-3C0B-6EE0-B2D4-5B7D11298865">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:45:41 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<sourcePk>4B97C42F-1745-9A5A-D41B-606753B8F32B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>recieves</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EC905B43-2210-DC51-1AED-ECE293140062</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>45D10B19-668B-7B55-878E-6F76BAF08F28</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

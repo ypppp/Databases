@@ -75,16 +75,36 @@
 <defaultValue>Y</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="animal_type" id="66FC518E-60FC-3446-2BC8-AC24AFBDAA23">
-<createdBy>benca</createdBy>
-<createdTime>2023-09-11 02:22:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[Type of animal]]></commentInRDBMS>
+<Attribute name="animaltype_id" id="69262F3F-6732-9671-A817-147F4FD3CD1F">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:26:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Identifier for Animal Type]]></commentInRDBMS>
+<generatorID>19EE97E7-3166-D643-2DF2-94F658420F3E</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
 </engineerTo>
+<referedAttribute>9C925F1A-655F-8436-4870-2DEF3DF42691</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_id" id="BBA57B53-5296-33C4-1FCE-D74583DD4B9E">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:32:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier of owner]]></commentInRDBMS>
+<generatorID>C6D2D5B3-6698-84A6-D96E-82E1A3342217</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>4F0BD36C-B4C9-199B-0F18-84B815411FFA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

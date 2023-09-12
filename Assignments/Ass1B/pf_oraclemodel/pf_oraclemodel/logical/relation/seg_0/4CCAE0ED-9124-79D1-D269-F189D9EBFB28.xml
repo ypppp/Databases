@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="specialty_vet" directorySegmentName="seg_0" id="4CCAE0ED-9124-79D1-D269-F189D9EBFB28">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:14:25 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<sourcePk>479B211C-767D-1D4C-4FBE-6E6096B361D0</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>titles</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5C0C47AE-C27C-31A4-1621-818BEE06335A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EC905B43-2210-DC51-1AED-ECE293140062</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

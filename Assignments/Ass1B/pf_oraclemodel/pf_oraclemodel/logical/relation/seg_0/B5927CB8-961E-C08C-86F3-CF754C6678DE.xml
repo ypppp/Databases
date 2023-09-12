@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Training_certificate" directorySegmentName="seg_0" id="B5927CB8-961E-C08C-86F3-CF754C6678DE">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:45:00 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<sourcePk>CB664DA4-8F8F-FA5C-8177-C573850C180C</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>gives</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>40D02555-1193-3B39-4387-13BE1CCD8E00</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>45D10B19-668B-7B55-878E-6F76BAF08F28</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

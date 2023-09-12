@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="clinic_traning" directorySegmentName="seg_0" id="600DAEA1-8E3F-E3C5-3759-BC3CBB366009">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 10:44:53 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<sourcePk>475EE603-79EC-0206-B481-AA64022664A5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>helds</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6A869E8E-B835-66C7-4C9C-0856BD720B98</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>40D02555-1193-3B39-4387-13BE1CCD8E00</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

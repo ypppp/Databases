@@ -86,6 +86,39 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="clinic_id" id="7DB781EC-A074-1195-01CE-700A57131A61">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 10:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for the clinic]]></commentInRDBMS>
+<generatorID>FFFCBAF7-9F41-D2C5-E51E-96A80FCE9680</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>CA40A826-36C1-E88B-EAC2-AC078E5E1026</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="speciality_id" id="1F0A6C4B-5021-5ADB-CFB2-FCC8C94BD0AB">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:15:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Identifyer for Speciality]]></commentInRDBMS>
+<generatorID>4CCAE0ED-9124-79D1-D269-F189D9EBFB28</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>701E6C0D-C88F-62F2-0C92-77B45F8A697D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4B97C42F-1745-9A5A-D41B-606753B8F32B" name="VET PK">

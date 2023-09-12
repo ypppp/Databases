@@ -115,6 +115,71 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="vet_id" id="E46EA879-9537-A8BA-1F41-0FC5857F97FF">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:13:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for vet]]></commentInRDBMS>
+<generatorID>1D68649A-8BD3-4EE4-D997-0840CF7D4CD7</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>1018D05E-1BA9-B412-4CF3-4C082A5826EC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clinic_id" id="D7D4E4DA-689C-AD08-FE81-837B1B5002F3">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:18:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for the clinic]]></commentInRDBMS>
+<generatorID>3792DF14-65A5-AE3C-822B-F4D264F97B7A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>CA40A826-36C1-E88B-EAC2-AC078E5E1026</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="animal_id" id="DFE3DD5A-8E13-90CF-BEDB-7B905B93F1BD">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:31:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for animal]]></commentInRDBMS>
+<generatorID>98FA768A-682B-1BDA-D24D-99DB1BDF1474</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>F7897CE7-A923-3B86-3724-30E707D67BD8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_id1" id="EF166F29-81CB-DBBB-06DE-7A2DBA148632">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 14:13:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for a visit]]></commentInRDBMS>
+<generatorID>4F746D77-B70B-AAF8-FF2F-1C024115628B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B1BC8ABF-774A-0708-3993-3E00D166ECCA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="CA0CCE9D-C6DA-03BC-32CA-2282C43901DB" name="VISIT PK">
@@ -127,6 +192,19 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>B1BC8ABF-774A-0708-3993-3E00D166ECCA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="376AECC7-8C8A-EA34-E146-E9829E50B31C" name="VISIT UK">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:35:10 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<newElementsIDs>3884EB51-ECFC-E129-AA16-0E65BBC070BE,DFE3DD5A-8E13-90CF-BEDB-7B905B93F1BD</newElementsIDs>
+<usedAttributes>
+<attributeRef>3884EB51-ECFC-E129-AA16-0E65BBC070BE</attributeRef>
+<attributeRef>DFE3DD5A-8E13-90CF-BEDB-7B905B93F1BD</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
