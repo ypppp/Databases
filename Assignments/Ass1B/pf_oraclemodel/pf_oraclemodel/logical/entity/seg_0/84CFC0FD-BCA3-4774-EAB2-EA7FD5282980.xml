@@ -18,7 +18,7 @@
 <Attribute name="animaltype_id" id="9C925F1A-655F-8436-4870-2DEF3DF42691">
 <createdBy>User</createdBy>
 <createdTime>2023-09-12 11:21:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[Unique Identifier for Animal Type]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Unique Identifier for Animal Type ]]></commentInRDBMS>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
