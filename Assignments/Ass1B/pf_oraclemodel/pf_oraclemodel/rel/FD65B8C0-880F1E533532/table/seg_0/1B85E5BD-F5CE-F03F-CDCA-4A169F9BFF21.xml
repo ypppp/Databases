@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B85E5BD-F5CE-F03F-CDCA-4A169F9BFF21" name="SERVICELINE">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>D0159928-93D7-5E1D-4CBC-3DAED39AD24F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="service_code" id="0720E212-FDAB-9471-2D37-394D1879426D">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Service code (unique idenitifier with "ABC00". First three characters uppercase letters, last two characters are numbers)]]></commentInRDBMS>
+<generatorID>F73E4082-433B-9FC9-385B-F36DD8B8062D</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2832EFFD-1D58-1284-C53A-B361B6AC5B9E" referredColumn="8A97BB33-5B46-9D34-AFE3-B9B1A6BD8E6F"/>
+</associations>
+</Column>
+<Column name="visit_id" id="D4C882C0-A7BA-6D0D-AB39-BC2CDA3E6DB8">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for a visit]]></commentInRDBMS>
+<generatorID>1B083471-DAE6-FF6F-2B66-9E981CDD3F4C</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="820205C2-B88C-F1BE-861C-AB8318660874" referredColumn="529785DA-2256-413C-CC18-0FC31C724306"/>
+</associations>
+</Column>
+<Column name="serviceline_cost" id="912A9CBF-33FE-7AE2-7F3A-EDCE3B4782F9">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cost of service (updated by vet for each visit)]]></commentInRDBMS>
+<generatorID>22A7BAE6-4065-DF09-CE41-8608AB2B765D</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3952B6B5-6D84-2AFB-C359-D6A457F44D5B" name="SERVICELINE_PK">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>081F58FC-3DD8-42D6-4B89-7FCBE5727C48</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0720E212-FDAB-9471-2D37-394D1879426D"/>
+<colUsage columnID="D4C882C0-A7BA-6D0D-AB39-BC2CDA3E6DB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D983CE3B-3829-D1C4-CA7B-26840BC8724E" name="service_serviceline">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>2F8D54F3-E1AC-A397-1469-71F0BAF6DB51</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0720E212-FDAB-9471-2D37-394D1879426D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC26C139-A7F7-CEB0-A3F8-57ED51084A9B" name="visit_serviceline">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>EAAE9FBC-5861-3386-93C1-6077A24FF68D</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4C882C0-A7BA-6D0D-AB39-BC2CDA3E6DB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

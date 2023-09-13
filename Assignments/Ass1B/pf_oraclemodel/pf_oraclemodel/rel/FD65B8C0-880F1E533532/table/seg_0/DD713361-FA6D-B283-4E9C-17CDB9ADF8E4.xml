@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD713361-FA6D-B283-4E9C-17CDB9ADF8E4" name="ANIMALTYPE">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>84CFC0FD-BCA3-4774-EAB2-EA7FD5282980</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="animaltype_id" id="55BF7B8B-2DA2-1C92-7C6E-F1FBBF55FD7A">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Identifier for Animal Type]]></commentInRDBMS>
+<generatorID>9C925F1A-655F-8436-4870-2DEF3DF42691</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="animaltype_name" id="8ED4D9F8-3C5C-82AF-8F10-12093FBFBDB1">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Name of Animal Type]]></commentInRDBMS>
+<generatorID>92450C33-C922-4EA4-4682-A132548C1537</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="524B8BF8-CCF5-19B3-290E-9CB2A36019C9" name="ANIMALTYPE_PK">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>9866F430-43AA-E6DA-9806-DCEEBD9F184D</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55BF7B8B-2DA2-1C92-7C6E-F1FBBF55FD7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

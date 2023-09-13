@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1797955F-DB7F-6F4F-955D-12C5D5A5487F" containerWithKeyObject="E0295D6E-ABD0-8256-AEC2-DE1157043F06" localFKIndex="5AB03BA5-DE2D-AB6C-1176-D4FEBE077FC9" name="vet_traning">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>6A61191C-E424-8B7B-BA77-13FA76C403E2</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<referredTableLongName>VET</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D316001A-E61A-90EB-D4E3-CD9D79D98E48</referredTableID>
+<keyObject>12A2F924-87BC-E461-E3D4-6770B3F7BF10</keyObject>
+<referredKeyID>12A2F924-87BC-E461-E3D4-6770B3F7BF10</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>vet_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

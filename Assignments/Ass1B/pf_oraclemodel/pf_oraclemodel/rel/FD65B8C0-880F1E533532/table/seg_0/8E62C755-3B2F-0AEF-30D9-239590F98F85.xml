@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E62C755-3B2F-0AEF-30D9-239590F98F85" name="ANIMAL">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>91F479E1-2A52-0237-F575-8945395E9204</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="animal_id" id="D24CC2B5-7BE3-56FF-C718-BBBF4D712C44">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for animal]]></commentInRDBMS>
+<generatorID>F7897CE7-A923-3B86-3724-30E707D67BD8</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="animal_name" id="B085FA4A-A680-2F45-9624-093FA95076A3">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Name of animal]]></commentInRDBMS>
+<generatorID>7862AAE5-3986-72B6-A80D-7BA5FE2DEB2B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="animal_yearborn" id="811179F0-41B8-C4BF-7217-574346433C32">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Year the animal was born]]></commentInRDBMS>
+<generatorID>D92B27E9-FA5D-AB23-8BDA-30A366CC8A65</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="animal_alive" id="E973E7C7-149F-6F5A-8908-BD11F6B6CF86">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Whether animal is alive or not (defaults to Y for yes)]]></commentInRDBMS>
+<generatorID>337CFBFD-486D-AD2C-EF0B-C65E1CEA5823</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<constraintName>chk_animalalive</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<defaultValue>Y</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="animaltype_id" id="853E8F71-3DC6-DF55-6D9D-BF9E17FD0B1B">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Identifier for Animal Type]]></commentInRDBMS>
+<generatorID>69262F3F-6732-9671-A817-147F4FD3CD1F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="68A6931B-AACC-EE4C-7251-80F0D80AB863" referredColumn="55BF7B8B-2DA2-1C92-7C6E-F1FBBF55FD7A"/>
+</associations>
+</Column>
+<Column name="owner_id" id="7A57C685-4366-FE5C-384E-92066DC3360D">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier of owner]]></commentInRDBMS>
+<generatorID>BBA57B53-5296-33C4-1FCE-D74583DD4B9E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="969ABC77-4D04-8E03-3398-BC58B617C429" referredColumn="A00479EA-BE2E-038A-A787-2CFD67014DF9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="354B2918-E4E5-AF3B-1569-604EF1CB864F" name="ANIMAL_PK">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>CEC0C6AE-FE76-349A-3640-72206B86948F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D24CC2B5-7BE3-56FF-C718-BBBF4D712C44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EF193BC-AD25-D3A9-7E38-7CD5F0FE9B93" name="Animaltype_animal">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>19EE97E7-3166-D643-2DF2-94F658420F3E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="853E8F71-3DC6-DF55-6D9D-BF9E17FD0B1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41E24F7B-7920-6246-31A8-E037B320E158" name="owner_animal">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>C6D2D5B3-6698-84A6-D96E-82E1A3342217</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A57C685-4366-FE5C-384E-92066DC3360D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

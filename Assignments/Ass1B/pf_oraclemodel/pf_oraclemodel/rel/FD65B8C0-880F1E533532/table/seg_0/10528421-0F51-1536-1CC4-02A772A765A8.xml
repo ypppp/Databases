@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10528421-0F51-1536-1CC4-02A772A765A8" name="CERTIFICATE">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>45D10B19-668B-7B55-878E-6F76BAF08F28</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cert_id" id="C8535AEE-6B90-ED13-635C-EF277B361BCA">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for certificate]]></commentInRDBMS>
+<generatorID>CA2D05B3-531C-1559-2B35-BAD83A8B5369</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cert_completed" id="C61362C8-AC40-B6CF-2B98-37E7ED869B96">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Whether certificate was given or not (training completed or not)]]></commentInRDBMS>
+<generatorID>308FF7B8-DC4B-DD42-1351-2F7B4D7F9E62</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<constraintName>chk_cert_completed</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cert_expiry" id="DC1B7A4B-8F78-EC82-CD89-1AE0DA0EE1E1">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of expiry for the certificate (if expires)]]></commentInRDBMS>
+<generatorID>CB2ECD97-A32A-731E-E575-3D28F32D2740</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="training_id" id="E5420289-1817-931B-53AE-51C4EF859470">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifer for a training]]></commentInRDBMS>
+<generatorID>D880D478-C56A-607C-2071-41A955CB9FA5</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="577E497B-5D31-DBF0-024C-0BE01163E882" referredColumn="936456F1-5803-0BDF-7F5A-CDE643C7FBC3"/>
+</associations>
+</Column>
+<Column name="vet_id" id="64E5942F-FBFC-8E88-20ED-484609CDBD47">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for vet]]></commentInRDBMS>
+<generatorID>AB0C200D-3DF5-60EE-9A59-C3B32004421B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AED69477-2CC2-F12B-F9DC-ECB9DA96F9DF" referredColumn="16B94C15-7293-01FD-0C91-1721D2D8230A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95514AA8-1D20-1751-A23C-D39B7071DBA3" name="CERTIFICATE_PK">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>911EF39B-49E7-26CA-7DE1-66DB213931AA</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8535AEE-6B90-ED13-635C-EF277B361BCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50B3D94E-8B7F-2162-04B2-43F019C97C11" name="CERTIFICATE_UKs">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>22A12B78-A246-E9EC-980C-60335A34A784</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5420289-1817-931B-53AE-51C4EF859470"/>
+<colUsage columnID="64E5942F-FBFC-8E88-20ED-484609CDBD47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D364FD9F-9E96-EAF1-9276-9E8F30A6381D" name="Training_certificate">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>B5927CB8-961E-C08C-86F3-CF754C6678DE</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5420289-1817-931B-53AE-51C4EF859470"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D79DC8DE-56DB-8689-0D17-B485740A9D7B" name="vet_certificate">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>688E4F34-3C0B-6EE0-B2D4-5B7D11298865</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64E5942F-FBFC-8E88-20ED-484609CDBD47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

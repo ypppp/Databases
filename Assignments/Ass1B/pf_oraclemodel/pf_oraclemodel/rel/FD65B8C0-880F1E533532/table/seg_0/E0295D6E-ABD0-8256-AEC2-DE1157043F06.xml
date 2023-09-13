@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0295D6E-ABD0-8256-AEC2-DE1157043F06" name="TRAINING">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>40D02555-1193-3B39-4387-13BE1CCD8E00</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="training_id" id="936456F1-5803-0BDF-7F5A-CDE643C7FBC3">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifer for a training]]></commentInRDBMS>
+<generatorID>D9354E9C-2A18-A075-F327-94A846C3AA90</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="training_datetime" id="2DC668E3-5609-18F1-FF46-6FEF8BD947D9">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date and time for the training that took place]]></commentInRDBMS>
+<generatorID>2A43622D-762A-1919-0D50-A681649987A6</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="training_title" id="3C3DC590-A0FE-91A2-FE86-6C463EE60D90">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Title of the training]]></commentInRDBMS>
+<generatorID>25BF4E0D-36FB-B352-A99F-E4E63919F381</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="training_duration" id="A0C31BFB-756F-2074-B1EA-C69DF86DD520">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Duration of the training (in hours)]]></commentInRDBMS>
+<generatorID>1EDAFE5E-CB0B-7A7C-5FC1-81BCCF6D7FBF</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_id" id="AA78A16F-E8F0-ECBF-8FCF-B3D9931624F0">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for the clinic]]></commentInRDBMS>
+<generatorID>BFEFCF6C-A6C7-685E-7A4E-CB349F339A03</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0712F6A-3B31-5E6D-99FE-E73A97F990CC" referredColumn="5D1590EE-4512-71DE-8245-5814FB4CDCA1"/>
+</associations>
+</Column>
+<Column name="vet_id" id="630246A6-CE11-5342-7236-39AA02A5ED29">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for vet]]></commentInRDBMS>
+<generatorID>B4DB1074-5D55-128F-FCDC-4A0BB8ADBD0A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1797955F-DB7F-6F4F-955D-12C5D5A5487F" referredColumn="16B94C15-7293-01FD-0C91-1721D2D8230A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E317622E-3D4E-56D1-3391-1C6CDD1EC938" name="TRAINING_PK">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>CB664DA4-8F8F-FA5C-8177-C573850C180C</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="936456F1-5803-0BDF-7F5A-CDE643C7FBC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF79E659-ABD3-EE5F-7003-BAB1E5917919" name="clinic_traning">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>600DAEA1-8E3F-E3C5-3759-BC3CBB366009</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA78A16F-E8F0-ECBF-8FCF-B3D9931624F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AB03BA5-DE2D-AB6C-1176-D4FEBE077FC9" name="vet_traning">
+<createdBy>benca</createdBy>
+<createdTime>2023-09-13 11:03:57 UTC</createdTime>
+<generatorID>6A61191C-E424-8B7B-BA77-13FA76C403E2</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="630246A6-CE11-5342-7236-39AA02A5ED29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
