@@ -115,6 +115,22 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="animal_id" id="DFE3DD5A-8E13-90CF-BEDB-7B905B93F1BD">
+<createdBy>User</createdBy>
+<createdTime>2023-09-12 11:31:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for animal]]></commentInRDBMS>
+<generatorID>98FA768A-682B-1BDA-D24D-99DB1BDF1474</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
+</engineerTo>
+<referedAttribute>F7897CE7-A923-3B86-3724-30E707D67BD8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="vet_id" id="E46EA879-9537-A8BA-1F41-0FC5857F97FF">
 <createdBy>User</createdBy>
 <createdTime>2023-09-12 11:13:01 UTC</createdTime>
@@ -147,22 +163,6 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="animal_id" id="DFE3DD5A-8E13-90CF-BEDB-7B905B93F1BD">
-<createdBy>User</createdBy>
-<createdTime>2023-09-12 11:31:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[Unique identifier for animal]]></commentInRDBMS>
-<generatorID>98FA768A-682B-1BDA-D24D-99DB1BDF1474</generatorID>
-<ownerDesignName>pf_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="FD65B8C0-E9FF-85B4-8471-880F1E533532" value="true"/>
-</engineerTo>
-<referedAttribute>F7897CE7-A923-3B86-3724-30E707D67BD8</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="initial_visit_id" id="EF166F29-81CB-DBBB-06DE-7A2DBA148632">
 <createdBy>User</createdBy>
 <createdTime>2023-09-12 14:13:18 UTC</createdTime>
@@ -178,7 +178,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
