@@ -1,4 +1,4 @@
--- Group: A043
+-- Group: A02 Group 043
 -- Student IDs: 29588774, 32205481
 -- Assignment 1B
 set echo on
