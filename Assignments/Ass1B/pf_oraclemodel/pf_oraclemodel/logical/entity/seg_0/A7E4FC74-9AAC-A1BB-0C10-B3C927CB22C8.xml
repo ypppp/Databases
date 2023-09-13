@@ -129,7 +129,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="clinic_id" id="D7D4E4DA-689C-AD08-FE81-837B1B5002F3">
 <createdBy>User</createdBy>
@@ -145,7 +145,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="animal_id" id="DFE3DD5A-8E13-90CF-BEDB-7B905B93F1BD">
 <createdBy>User</createdBy>
@@ -161,9 +161,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="visit_id1" id="EF166F29-81CB-DBBB-06DE-7A2DBA148632">
+<Attribute name="initial_visit_id" id="EF166F29-81CB-DBBB-06DE-7A2DBA148632">
 <createdBy>User</createdBy>
 <createdTime>2023-09-12 14:13:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[Unique identifier for a visit]]></commentInRDBMS>
